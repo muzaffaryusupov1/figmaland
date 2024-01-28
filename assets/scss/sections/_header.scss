@@ -1,0 +1,211 @@
+.header{
+    padding: 33px 0;
+    &__wrap{
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__navbar{
+        display: flex;
+        gap: 31px;
+
+        @media screen and (max-width: 950px) {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+
+        &__links{
+            color: $white-color;
+            padding: 10px;
+            text-align: center;
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0.2px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                color: $link-hover-color;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    &__buttons{
+        @extend %flex-center;
+        gap: 20px;
+    }
+
+    &__btn{
+        border: 1px solid $white-color;
+        box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+        padding: 20px 36px;
+        transition: all 0.2s ease-in-out;
+
+        @media screen and (max-width: 650px) {
+            padding: 14px 26px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 10px 20px;
+        }
+
+            &:hover{
+                background-color: $white-color;
+                border: 1px solid $white-color;
+
+                & span{
+                    color: $site-back-color;
+                }
+            }
+
+        &__title{
+            color: $white-color;
+            padding: 10px;
+            font-family: $montserrat;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 147%;
+            letter-spacing: 0.2px;
+
+            @media screen and (max-width: 500px) {
+                padding: 4;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__mobile{
+        display: none;
+        
+        @media screen and (max-width: 900px) {
+            display: block;
+        }
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 17px;
+        padding-top: 50px;
+
+        &__title{
+            width: 771px;
+            text-align: center;
+            padding: 10px;
+            color: $white-color;
+            font-family: $montserrat;
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0.2px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 52px;
+            }
+        }
+
+        &__subtitle{
+            width: 640px;
+            text-align: center;
+            padding: 10px;
+            color: $white-color;
+            font-family: $montserrat;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.2px;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+            }
+        }
+
+
+        &__buttons{
+            display: flex;
+            gap: 35px;
+
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+            }
+
+        }
+        &__btn{
+            background-color: $btn-color;
+            padding: 10px 30px;
+            box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+            border: 1px solid $btn-color;
+            transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 600px) {
+                padding: 8px 24px;
+            }
+
+            &:hover{
+                box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+                background-color: transparent;
+                border: 1px solid $white-color;
+            }
+
+            &__title{
+                padding: 10px;
+                color: $white-color;
+                font-family: $montserrat;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 147%;
+                letter-spacing: 0.2px;
+
+                @media screen and (max-width: 600px) {
+                    padding: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &__btn_two{
+            border: 1px solid $white-color;
+            padding: 20px 30px;
+            box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 600px) {
+                padding: 8px 24px;
+            }
+
+            &:hover{
+                background-color: $btn-color;
+                border: 1px solid $btn-color;
+            }
+        }
+    }
+
+    &__icon__img{
+        @media screen and (max-width: 430px) {
+            width: 100%;
+        }
+    }
+}

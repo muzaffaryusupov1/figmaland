@@ -1,0 +1,16 @@
+.main{
+    &_img{
+        margin: 40px 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, $bg-color 66.15%);
+    }
+
+    &__images{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        &__png{
+            width: 100%;
+        }
+    }
+}
