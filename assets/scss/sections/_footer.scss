@@ -1,0 +1,87 @@
+.footer{
+    margin-top: 200px;
+    padding: 107px 0;
+
+
+    &-row{
+        display: flex;
+        gap: 199px;
+        padding: 0 70px;
+    }
+
+
+    &-contents{
+        display: flex;
+        gap: 75px;
+    }
+
+
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+
+        &__title{
+            color: $white-color;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.1px;
+            margin-bottom: 16px;
+        }
+
+        &__link{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-right{
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_imgs{
+            @extend %flex-center;
+        }
+
+
+        &_icons{
+            @extend %flex-center;
+            gap: 10px;
+        }
+
+        &_socials{
+            @extend %flex-center;
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        &__title{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            padding: 10px;
+        }
+
+        &__number{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            padding: 0 8px;
+        }
+    }
+}

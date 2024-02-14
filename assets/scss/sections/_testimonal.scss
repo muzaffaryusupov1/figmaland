@@ -1,0 +1,106 @@
+.testimonal{
+    padding: 50px 20px;
+    margin: 150px 0;
+
+
+    &-row{
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+    }
+
+    &-col{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-card{
+        width: 430px;
+        height: 328px;
+        border-radius: 10px;
+        border: 1px solid $testimonal-card-color;
+        padding: 40px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+
+
+        &__header{
+            display: flex;
+            gap: 13px;
+            margin-bottom: 30px;
+        }
+
+        &__titles{
+            padding: 0 10px;
+        }
+
+        &__title{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    &-card2{
+        width: 430px;
+        height: 304px;
+        border-radius: 10px;
+        border: 1px solid $testimonal-card-color;
+        padding: 40px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+
+
+        &__header{
+            display: flex;
+            gap: 13px;
+            margin-bottom: 30px;
+        }
+
+        &__titles{
+            padding: 0 10px;
+        }
+
+        &__title{
+            color: $white-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    &-top{
+        @extend %flex_center;
+        padding: 10px;
+        margin: 50px 0;
+    }
+
+    &-title{
+        color: $white-color;
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 62px;
+        letter-spacing: 0.2px;
+    }
+
+    &__subtitle{
+        color: $white-color;
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.9px;
+    }
+}
