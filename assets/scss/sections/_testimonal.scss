@@ -1,106 +1,165 @@
-.testimonal{
-    padding: 50px 20px;
-    margin: 150px 0;
+.testimonal {
+	padding: 50px 20px;
+	margin: 150px 0;
 
+	&-row {
+		display: flex;
+		justify-content: center;
+		gap: 23px;
 
-    &-row{
-        display: flex;
-        justify-content: center;
-        gap: 23px;
-    }
+		@media (width <= 768px) {
+			gap: 16px;
+		}
 
-    &-col{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+		@media (width <= 700px) {
+			gap: 16px;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
-    &-card{
-        width: 430px;
-        height: 328px;
-        border-radius: 10px;
-        border: 1px solid $testimonal-card-color;
-        padding: 40px;
-        transition: all 0.2s ease-in-out;
+	&-col {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
 
-        &:hover{
-            transform: translateY(-10px);
-            cursor: pointer;
-        }
+		@media (width <= 1000px) {
+			gap: 10px;
+		}
+	}
 
+	&-card {
+		width: 430px;
+		height: 328px;
+		border-radius: 10px;
+		border: 1px solid $testimonal-card-color;
+		padding: 40px;
+		transition: all 0.2s ease-in-out;
 
-        &__header{
-            display: flex;
-            gap: 13px;
-            margin-bottom: 30px;
-        }
+		@media (width <= 1000px) {
+			width: 350px;
+			height: 100%;
+			padding: 26px;
+		}
 
-        &__titles{
-            padding: 0 10px;
-        }
+		@media (width <= 798px) {
+			width: 300px;
+			padding: 18px;
+		}
 
-        &__title{
-            color: $white-color;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.2px;
-        }
-    }
+		@media (width <= 700px) {
+			width: 360px;
+			padding: 18px;
+		}
 
-    &-card2{
-        width: 430px;
-        height: 304px;
-        border-radius: 10px;
-        border: 1px solid $testimonal-card-color;
-        padding: 40px;
-        transition: all 0.2s ease-in-out;
+		&:hover {
+			transform: translateY(-10px);
+			cursor: pointer;
 
-        &:hover{
-            transform: translateY(-10px);
-            cursor: pointer;
-        }
+			@media (width <= 1000px) {
+				transform: translateY(0);
+			}
+		}
 
+		&__header {
+			display: flex;
+			gap: 13px;
+			margin-bottom: 30px;
+		}
 
-        &__header{
-            display: flex;
-            gap: 13px;
-            margin-bottom: 30px;
-        }
+		&__titles {
+			padding: 0 10px;
+		}
 
-        &__titles{
-            padding: 0 10px;
-        }
+		&__title {
+			color: $white-color;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+		}
+	}
 
-        &__title{
-            color: $white-color;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.2px;
-        }
-    }
+	&-card2 {
+		width: 430px;
+		height: 304px;
+		border-radius: 10px;
+		border: 1px solid $testimonal-card-color;
+		padding: 40px;
+		transition: all 0.2s ease-in-out;
 
-    &-top{
-        @extend %flex_center;
-        padding: 10px;
-        margin: 50px 0;
-    }
+		@media (width <= 798px) {
+			width: 300px;
+			padding: 18px;
+		}
 
-    &-title{
-        color: $white-color;
-        font-size: 52px;
-        font-weight: 500;
-        line-height: 62px;
-        letter-spacing: 0.2px;
-    }
+		@media (width <= 700px) {
+			width: 360px;
+			padding: 18px;
+		}
 
-    &__subtitle{
-        color: $white-color;
-        font-family: $roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.9px;
-    }
+		&:hover {
+			transform: translateY(-10px);
+			cursor: pointer;
+
+			@media (width <= 1000px) {
+				transform: translateY(0);
+			}
+		}
+
+		&__header {
+			display: flex;
+			gap: 13px;
+			margin-bottom: 30px;
+		}
+
+		&__titles {
+			padding: 0 10px;
+		}
+
+		&__title {
+			color: $white-color;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+		}
+	}
+
+	&-top {
+		@extend %flex_center;
+		padding: 10px;
+		margin: 50px 0;
+
+		@media (width <= 768px) {
+			margin: 32px 0;
+		}
+	}
+
+	&-title {
+		color: $white-color;
+		font-size: 52px;
+		font-weight: 500;
+		line-height: 62px;
+		letter-spacing: 0.2px;
+
+		@media (width <= 768px) {
+			font-size: 36px;
+			line-height: 48px;
+		}
+
+		@media (width <= 500px) {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
+	&__subtitle {
+		color: $white-color;
+		font-family: $roboto;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.9px;
+	}
 }

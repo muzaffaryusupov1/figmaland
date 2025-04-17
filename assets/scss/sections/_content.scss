@@ -1,62 +1,102 @@
-.content{
-    padding: 80px 0;
-    margin: 50px 0;
+.content {
+	padding: 80px 0;
+	margin: 50px 0;
 
-    &-banner{
-        width: 100%;
-        height: 370px;
-        background-color: $banner-color;
-        border-radius: 33px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+	&-banner {
+		width: 100%;
+		height: 370px;
+		background-color: $banner-color;
+		border-radius: 33px;
+		display: flex;
 
+		@media (width <= 768px) {
+			flex-direction: column;
+			height: 100%;
+			padding: 20px 10px;
+		}
 
-        &__row{
-            padding: 17px 77px;
-        }
+		&__row {
+			padding: 17px 77px;
+			margin-top: 40px;
 
+			@media (width <= 900px) {
+				padding: 15px 48px;
+			}
 
-        &__title{
-            color: $white-color;
-            font-size: 52px;
-            font-weight: 400;
-            line-height: 62px;
-            letter-spacing: 0.2px;
-            text-align: left;
-            cursor: pointer;
-        }
+			@media (width <= 768pxpx) {
+				padding: 15px 32px;
+			}
+		}
 
+		&__title {
+			color: $white-color;
+			font-size: 52px;
+			font-weight: 400;
+			line-height: 62px;
+			letter-spacing: 0.2px;
+			text-align: left;
+			cursor: pointer;
 
-        &__btn{
-            width: 232px;
-            background-color: $btn-color;
-            box-shadow: 0px 4px 31px 0px $rgba-btn-color;
-            padding: 20px 36px;
-            border: 1px solid $btn-color;
-            transition: all 0.2s ease-in-out;
-            color: $white-color;
-            font-size: 17px;
-            font-weight: 500;
-            line-height: 25px;
-            letter-spacing: 0.2px;
-            margin-top: 37px;
+			@media (width <= 1140px) {
+				font-size: 38px;
+				line-height: 50px;
+			}
 
-            @media screen and (max-width: 400px) {
-                padding: 10px 26px;
-            }
+			@media (width <= 1020px) {
+				font-size: 28px;
+				line-height: 37px;
+			}
 
-            &:hover{
-                background-color: $white-color;
-                border: 1px solid $black-color;
-                color: $black-color;
-            }
-        }
+			@media (width <= 768px) {
+				font-size: 18px;
+			}
+		}
 
+		&__btn {
+			width: 232px;
+			background-color: $btn-color;
+			box-shadow: 0px 4px 31px 0px $rgba-btn-color;
+			padding: 20px 36px;
+			border: 1px solid $btn-color;
+			transition: all 0.2s ease-in-out;
+			color: $white-color;
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 25px;
+			letter-spacing: 0.2px;
+			margin-top: 37px;
 
-        & img{
-            cursor: pointer;
-        }
-    }
+			@media screen and (max-width: 768px) {
+				padding: 10px 26px;
+				width: 100%;
+			}
+
+			@media (width <= 500px) {
+				padding: 10px;
+				margin-top: 15px;
+				font-size: 14px;
+				width: 100%;
+			}
+
+			&:hover {
+				background-color: $white-color;
+				border: 1px solid $black-color;
+				color: $black-color;
+
+				@media (width <= 500px) {
+					background-color: $btn-color;
+					border: 1px solid $btn-color;
+					color: $white-color;
+				}
+			}
+		}
+
+		& img {
+			cursor: pointer;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: 30px;
+		}
+	}
 }
